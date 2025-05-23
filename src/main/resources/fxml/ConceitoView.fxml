@@ -6,7 +6,7 @@
            fx:controller="org.calculoemergiapet.controller.ConceitoController"
            styleClass="bg">
     <VBox alignment="CENTER" spacing="16" styleClass="card" maxWidth="480">
-        <fx:include source="Header.fxml" />
+            <fx:include source="Header.fxml" />
 
         <Label text="CONCEITO DE EMERGIA" styleClass="title" />
         <VBox styleClass="emergyDiv">
@@ -15,10 +15,5 @@
         <VBox styleClass="emergyDiv">
             <Label wrapText="true" text="Diferente da ACV tradicional, que avalia os impactos do ponto de vista do consumidor (como emissão de CO2), a emergia observa pelo lado da natureza, considerando o esforço ecológico para manter os sistemas em funcionamento." />
         </VBox>
-
-        <Button text="Ir para Simulação"   onAction="#irSimulacao" />
-        <Button text="Tutorial" onAction="#irTutorial" />
-        <Button text="Relatórios"  onAction="#irRelatorios" />
-        <Button text="Configuração"  onAction="#irConfiguracao" />
     </VBox>
 </StackPane>

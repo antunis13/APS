@@ -2,6 +2,8 @@
     -fx-padding: 0;
     -fx-margin: 0;
     box-sizing: border-box;
+    -fx-background-color: rgb(5, 15, 23);
+    -fx-text-fill: white;
 }
 
 @font-face {
@@ -14,21 +16,31 @@
 }
 
 .header-button {
-    -fx-background-color: black;
-    -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-cursor: hand;
     -fx-padding: 5 15 5 15;
+    -fx-text-fill: rgb(77, 172, 154);
+    -fx-underline: none;
 }
 
-.header-button:hover {
-    -fx-background-color: rgba(255, 255, 255, 0.2);
+.header-button:focused {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.header{
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: rgb(24, 38,49);
+    -fx-border-insets: 10;
+}
+.titleHeader{
+    -fx-text-fill: rgb(77, 172, 154);
 }
 .emergyDiv{
-    -fx-box-shadow: 1px 1px 1px black;
     -fx-text-align: center;
     -fx-padding: 10px;
-
 }
 .title {
     -fx-font-size: 24px;
