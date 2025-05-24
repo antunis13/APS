@@ -4,20 +4,19 @@
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="org.calculoemergiapet.controller.SimulacaoController"
-            styleClass="bg">
+            styleClass="bg" >
     <center>
-        <VBox alignment="CENTER" spacing="12" padding="20" maxWidth="480" styleClass="card">
-            <Label text="SIMULAÇÃO" styleClass="title" />
-            <GridPane hgap="10" vgap="10">
-                <Label text="R:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
-                <TextField fx:id="rField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
-                <Label text="N:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
-                <TextField fx:id="nField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
-                <Label text="F:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
-                <TextField fx:id="fField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+        <VBox alignment="CENTER" spacing="12" style="-fx-padding: 20;" maxWidth="480" prefWidth="300"  >
+            <Label text="Simulação" styleClass="title" />
+            <GridPane hgap="10" vgap="10" >
+                <Label text="Energia utilizada" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="simulationLbl"/>
+                <TextField fx:id="rField" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="simulationTxt"/>
+
+                <Label text="Transformidade da fonte" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="simulationLbl"/>
+                <TextField fx:id="nField" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="simulationTxt"/>
             </GridPane>
-            <Button text="Calcular" onAction="#calcular" />
-            <VBox spacing="4">
+            <Button text="Calcular" onAction="#calcular" styleClass="simulationBtn" style="-fx-background-color: rgb(4, 22, 36)"/>
+            <VBox spacing="4" >
                 <Label fx:id="lblY" />
                 <Label fx:id="lblRen" />
                 <Label fx:id="lblElr" />

@@ -38,6 +38,7 @@
 .titleHeader{
     -fx-text-fill: rgb(77, 172, 154);
 }
+
 .emergyDiv{
     -fx-text-align: center;
     -fx-padding: 10px;
@@ -45,7 +46,40 @@
 .title {
     -fx-font-size: 24px;
     -fx-font-weight: bold;
+    -fx-text-fill: white;
 }
+
+.loginTxt{
+    -fx-text-fill: rgb(101, 112, 121);
+    -fx-font-size: 15px;
+    -fx-border-color: rgb(24, 38,49);
+    -fx-padding: 10;
+    -fx-max-width: 300;
+    -fx-border-radius: 5;
+}
+
+.loginPwd{
+    -fx-text-fill: rgb(101, 112, 121);
+    -fx-font-size: 15px;
+    -fx-border-color: rgb(24, 38,49);
+    -fx-padding: 10px;
+    -fx-max-width: 300px;
+    -fx-border-radius: 5px;
+}
+
+.signIn {
+    -fx-padding: 10px;
+    -fx-font-size: 15px;
+    -fx-border-color: rgb(67, 151, 161);
+    -fx-font-weight: bold;
+    -fx-pref-width: 300px;
+
+
+    -fx-border-radius: 5px;
+    -fx-text-fill: white;
+}
+
+
 
 .sidebar {
     -fx-padding: 10;
@@ -55,16 +89,35 @@
     -fx-max-width: Infinity;
     -fx-background-color: transparent;
     -fx-text-fill: white;
-    -fx-font-size: 14px;
+    -fx-font-size: 14;
 }
 .button {
     -fx-background-color: black;
     -fx-text-fill: white;
     -fx-background-radius: 10;
-    -fx-padding: 5px;
+    -fx-padding: 5;
     -fx-cursor: hand;
 }
 
+.simulationLbl{
+    -fx-text-fill: rgb(129, 136, 142);
+    -fx-font-size: 15px;
+    -fx-max-width: infinity;
+}
+.simulationTxt{
+    -fx-text-fill:  rgb(101, 112, 121);
+    -fx-padding: 10px;
+    -fx-border-color: rgb(18, 30, 36);
+}
+.simulationBtn{
+    -fx-padding: 10px;
+    -fx-font-size: 15px;
+    -fx-border-color: rgb(67, 151, 161);
+    -fx-font-weight: bold;
+    -fx-pref-width: 300px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: white;
+}
 
 .error {
     -fx-text-fill: red;

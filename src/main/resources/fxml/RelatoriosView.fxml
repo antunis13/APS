@@ -5,9 +5,13 @@
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="org.calculoemergiapet.controller.RelatoriosController"
            styleClass="bg">
-    <VBox alignment="CENTER" spacing="16" styleClass="card" maxWidth="420">
-        <Label text="RELATÓRIOS" styleClass="title" />
-        <Label wrapText="true" text="Aqui futuramente serão exibidos relatórios baseados nas simulações realizadas." />
-        <Button text="Voltar" onAction="#voltar" />
+    <VBox alignment="CENTER" spacing="16" maxWidth="600" style="-fx-padding: 20;">
+        <fx:include source="Header.fxml" />
+
+        <Label text="Relatórios" styleClass="title" />
+        <Label wrapText="true" text="Histórico de simulações realizadas:" />
+
+        <ListView fx:id="listRelatorios" prefHeight="200" prefWidth="500" onMouseClicked="#mostrarDetalhes" />
+
     </VBox>
 </StackPane>

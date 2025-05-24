@@ -5,12 +5,12 @@
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="org.calculoemergiapet.controller.LoginController"
            styleClass="bg">
-    <VBox alignment="CENTER" spacing="12" maxWidth="320" styleClass="card">
-        <Label text="LOGIN" styleClass="title" />
-        <TextField fx:id="usernameField" promptText="Usuário" />
-        <PasswordField fx:id="passwordField" promptText="Senha" />
-        <Button text="Entrar" onAction="#handleLogin" />
-        <Hyperlink text="Cadastrar" onAction="#goToCadastro" />
+    <VBox alignment="CENTER" spacing="12" prefWidth="400" maxWidth="550" styleClass="card">
+        <Label text="Login" styleClass="title" />
+        <TextField fx:id="usernameField" promptText="Usuário" styleClass="loginTxt"/>
+        <PasswordField fx:id="passwordField" promptText="Senha" styleClass="loginPwd"/>
+        <Button text="Entrar" onAction="#handleLogin" style="-fx-background-color: linear-gradient(to right, #081f2b, #174251);" styleClass="signIn" />
+        <Hyperlink text="Cadastrar" onAction="#goToCadastro" styleClass="signUp"/>
         <Label fx:id="errorLabel" styleClass="error" />
     </VBox>
 </StackPane>
