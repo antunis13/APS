@@ -4,14 +4,17 @@
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="org.calculoemergiapet.controller.RelatoriosController"
-           styleClass="bg">
-    <VBox alignment="CENTER" spacing="16" maxWidth="600" style="-fx-padding: 20;">
+           prefHeight="500" prefWidth="500">
+    <VBox spacing="16" fillWidth="true">
         <fx:include source="Header.fxml" />
+        <VBox alignment="CENTER" spacing="16" style="-fx-padding: 20;" VBox.vgrow="ALWAYS">
 
-        <Label text="Relatórios" styleClass="title" />
-        <Label wrapText="true" text="Histórico de simulações realizadas:" />
+            <Label text="Relatórios" styleClass="title" />
+            <Label wrapText="true" text="Histórico de simulações realizadas:" />
 
-        <ListView fx:id="listRelatorios" prefHeight="200" prefWidth="500" onMouseClicked="#mostrarDetalhes" />
+            <ListView fx:id="listRelatorios"  prefHeight="200" prefWidth="500" onMouseClicked="#mostrarDetalhes" />
 
+            <Button text="Voltar" onAction="#voltar" styleClass="backBtn"  />
+        </VBox>
     </VBox>
 </StackPane>

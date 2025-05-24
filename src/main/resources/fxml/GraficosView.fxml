@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.calculoemergiapet.controller.GraficosController"
+            prefWidth="500" prefHeight="500">
+
+    <top>
+        <fx:include source="Header.fxml" />
+    </top>
+
+    <!-- CONTEÚDO CENTRAL -->
+    <center>
+        <VBox alignment="CENTER" spacing="16" fillWidth="true">
+            <VBox alignment="CENTER" spacing="16" maxWidth="480">
+                <Label text="Gráficos" styleClass="title"/>
+
+                <Button text="Mostrar Gráficos" onAction="#mostrarGraficos" styleClass="graphicBtn"/>
+
+                <Button text="Voltar" onAction="#voltar" styleClass="backBtn"/>
+            </VBox>
+        </VBox>
+    </center>
+
+</BorderPane>
+

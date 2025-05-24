@@ -9,7 +9,10 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<BorderPane>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="org.calculoemergiapet.controller.ConceitoController">
     <top>
         <HBox styleClass="header">
 
@@ -24,9 +27,9 @@
             <Region HBox.hgrow="ALWAYS" />
 
 
-            <Hyperlink text="Simulação" styleClass="header-button" />
-            <Hyperlink text="Relatórios" styleClass="header-button" />
-            <Hyperlink text="Diagramas" styleClass="header-button" />
+            <Hyperlink text="Simulação" styleClass="header-button" onAction="#irSimulacao" />
+            <Hyperlink text="Relatórios" styleClass="header-button" onAction="#irRelatorios" />
+            <Hyperlink text="Graficos" styleClass="header-button" onAction="#irGraficos"/>
         </HBox>
     </top>
 </BorderPane>

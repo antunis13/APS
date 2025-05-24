@@ -4,11 +4,14 @@
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="org.calculoemergiapet.controller.SimulacaoController"
-            styleClass="bg" >
+            prefWidth="500" prefHeight="500">
+    <top>
+            <fx:include source="Header.fxml" />
+    </top>
     <center>
-        <VBox alignment="CENTER" spacing="12" style="-fx-padding: 20;" maxWidth="480" prefWidth="300"  >
+        <VBox alignment="CENTER" spacing="12" style="-fx-padding: 20;" >
             <Label text="Simulação" styleClass="title" />
-            <GridPane hgap="10" vgap="10" >
+            <GridPane hgap="10" vgap="10" alignment="CENTER" >
                 <Label text="Energia utilizada" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="simulationLbl"/>
                 <TextField fx:id="rField" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="simulationTxt"/>
 
@@ -24,6 +27,8 @@
                 <Label fx:id="lblEyr" />
                 <Label fx:id="lblEsi" />
             </VBox>
+
+            <Button text="Voltar" onAction="#voltar" styleClass="backBtn"  />
         </VBox>
     </center>
 </BorderPane>

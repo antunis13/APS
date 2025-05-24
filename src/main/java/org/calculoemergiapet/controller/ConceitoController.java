@@ -13,6 +13,8 @@ public class ConceitoController {
         SceneManager.switchTo("/fxml/RelatoriosView.fxml");
     }
 
+    @FXML private void irGraficos(){ SceneManager.switchTo("/fxml/GraficosView.fxml"); }
+
     @FXML
     private void irTutorial(){
         SceneManager.switchTo("/fxml/TutorialView.fxml");

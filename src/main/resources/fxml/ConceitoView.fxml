@@ -3,17 +3,18 @@
 <?import javafx.scene.control.*?>
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
-           fx:controller="org.calculoemergiapet.controller.ConceitoController"
-           styleClass="bg">
-    <VBox alignment="CENTER" spacing="16" styleClass="card" maxWidth="480">
-            <fx:include source="Header.fxml" />
+           fx:controller="org.calculoemergiapet.controller.ConceitoController" prefWidth="500" prefHeight="500">
+    <VBox spacing="16" fillWidth="true">
+        <fx:include source="Header.fxml" />
 
-        <Label text="CONCEITO DE EMERGIA" styleClass="title" />
-        <VBox styleClass="emergyDiv">
-            <Label wrapText="true" text="A emergia representa toda a energia solar(direta ou indireta) usada na produção de algo, medida em joules de emergia solar(sej)." />
-        </VBox>
-        <VBox styleClass="emergyDiv">
-            <Label wrapText="true" text="Diferente da ACV tradicional, que avalia os impactos do ponto de vista do consumidor (como emissão de CO2), a emergia observa pelo lado da natureza, considerando o esforço ecológico para manter os sistemas em funcionamento." />
+        <VBox alignment="CENTER" spacing="16" VBox.vgrow="ALWAYS" >
+            <Label text="Conceito de Emergia" styleClass="title"/>
+            <VBox styleClass="emergyDiv" alignment="CENTER">
+                <Label wrapText="true" text="A emergia representa toda a energia solar(direta ou indireta) usada na produção de algo, medida em joules de emergia solar(sej)." />
+            </VBox>
+            <VBox styleClass="emergyDiv" alignment="CENTER">
+                <Label wrapText="true" text="Diferente da ACV tradicional, que avalia os impactos do ponto de vista do consumidor (como emissão de CO2), a emergia observa pelo lado da natureza, considerando o esforço ecológico para manter os sistemas em funcionamento. Com isso, é possível quantificar o suporte ambiental invisível que usamos diariamente." />
+            </VBox>
         </VBox>
     </VBox>
 </StackPane>
