@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="org.calculoemergiapet.controller.SimulacaoController"
@@ -11,13 +14,26 @@
     <center>
         <VBox alignment="CENTER" spacing="12" style="-fx-padding: 20;" >
             <Label text="Simulação" styleClass="title" />
-            <GridPane hgap="10" vgap="10" alignment="CENTER" >
-                <Label text="Energia utilizada" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="simulationLbl"/>
-                <TextField fx:id="rField" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="simulationTxt"/>
 
-                <Label text="Transformidade da fonte" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="simulationLbl"/>
-                <TextField fx:id="nField" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="simulationTxt"/>
-            </GridPane>
+                <Label text="Escolha a fonte" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="simulationLbl"/>
+                <ComboBox fx:id="comboBoxId" layoutX="50" layoutY="50" prefWidth="100"  styleClass="simulationSlct" GridPane.rowIndex="1" GridPane.columnIndex="0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Sol" />
+                            <String fx:value="Maré" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <VBox.margin>
+                    <Insets bottom="20" />
+                </VBox.margin>
+
+                <Label text="Energia utilizada(J)" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="simulationLbl"/>
+                <TextField fx:id="eField" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="simulationTxt" maxWidth="300"/>
+
+                <Label text="Transformidade da fonte(seJ/J)" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="simulationLbl"/>
+                <TextField fx:id="tField" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="simulationTxt" maxWidth="300"/>
+
             <Button text="Calcular" onAction="#calcular" styleClass="simulationBtn" style="-fx-background-color: rgb(4, 22, 36)"/>
             <VBox spacing="4" >
                 <Label fx:id="lblY" />

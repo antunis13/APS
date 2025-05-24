@@ -50,23 +50,6 @@
     -fx-text-fill: white;
 }
 
-.loginTxt{
-    -fx-text-fill: rgb(101, 112, 121);
-    -fx-font-size: 15px;
-    -fx-border-color: rgb(24, 38,49);
-    -fx-padding: 10;
-    -fx-max-width: 300;
-    -fx-border-radius: 5;
-}
-
-.loginPwd{
-    -fx-text-fill: rgb(101, 112, 121);
-    -fx-font-size: 15px;
-    -fx-border-color: rgb(24, 38,49);
-    -fx-padding: 10px;
-    -fx-max-width: 300px;
-    -fx-border-radius: 5px;
-}
 
 .signIn {
     -fx-padding: 10px;
@@ -82,23 +65,6 @@
 
 
 
-.sidebar {
-    -fx-padding: 10;
-    -fx-background-color: #2c3e50;
-}
-.sidebar .button {
-    -fx-max-width: Infinity;
-    -fx-background-color: transparent;
-    -fx-text-fill: white;
-    -fx-font-size: 14;
-}
-.button {
-    -fx-background-color: black;
-    -fx-text-fill: white;
-    -fx-background-radius: 10;
-    -fx-padding: 5;
-    -fx-cursor: hand;
-}
 
 .simulationLbl{
     -fx-text-fill: rgb(129, 136, 142);
@@ -118,8 +84,14 @@
     -fx-pref-width: 300px;
     -fx-border-radius: 5px;
     -fx-text-fill: white;
-    -fx-border-insets: 10px 0px;
+
 }
+.simulationSlct{
+    -fx-border-color: rgba(60, 72, 81, 0.86);
+    -fx-padding: 10px;
+    -fx-font-size: 10px;
+}
+
 
 .backBtn{
     -fx-font-size: 15px;
@@ -140,6 +112,3 @@
     -fx-text-fill: white;
 }
 
-.error {
-    -fx-text-fill: red;
-}

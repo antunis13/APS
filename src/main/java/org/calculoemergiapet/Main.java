@@ -7,7 +7,7 @@ import org.calculoemergiapet.util.SceneManager;
 public class Main extends Application {
     @Override public void start(Stage stage) {
         SceneManager.init(stage);
-        SceneManager.switchTo("/fxml/GraficosView.fxml");
+        SceneManager.switchTo("/fxml/LoginView.fxml");
     }
     public static void main(String[] args) { launch(args); }
 }
