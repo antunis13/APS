@@ -8,7 +8,7 @@ public final class SceneManager {
     private static Stage stage;
 
     private SceneManager(){}
-    public static void init(Stage primary){ stage=primary; stage.setTitle("Cálculo de Emergia - PET"); }
+    public static void init(Stage primary){ stage=primary; stage.setTitle("Cálculo de Emergia - PET");  }
     public static void switchTo(String fxmlPath){
         try{
             FXMLLoader fx=new FXMLLoader(SceneManager.class.getResource(fxmlPath));

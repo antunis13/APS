@@ -29,20 +29,15 @@
                 </VBox.margin>
 
                 <Label text="Energia utilizada(J)" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="simulationLbl"/>
-                <TextField fx:id="eField" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="simulationTxt" maxWidth="300"/>
+                <TextField fx:id="inputEnergia" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="simulationTxt" maxWidth="300"/>
 
                 <Label text="Transformidade da fonte(seJ/J)" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="simulationLbl"/>
                 <TextField fx:id="tField" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="simulationTxt" maxWidth="300"/>
 
             <Button text="Calcular" onAction="#calcular" styleClass="simulationBtn" style="-fx-background-color: rgb(4, 22, 36)"/>
-            <VBox spacing="4" >
-                <Label fx:id="lblY" />
-                <Label fx:id="lblRen" />
-                <Label fx:id="lblElr" />
-                <Label fx:id="lblEir" />
-                <Label fx:id="lblEyr" />
-                <Label fx:id="lblEsi" />
-            </VBox>
+            <Button text="Limpar" onAction="#limpar" styleClass="simulationBtn" style="-fx-background-color: rgb(4, 22, 36)"/>
+
+                <Label fx:id="labelResultado" styleClass="simulationLbl" />
 
             <Button text="Voltar" onAction="#voltar" styleClass="backBtn"  />
         </VBox>

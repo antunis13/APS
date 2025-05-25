@@ -1,8 +1,45 @@
 package org.calculoemergiapet.model;
-public class Simulacao{
-    private final double r,n,f;
-    public Simulacao(double r,double n,double f){this.r=r;this.n=n;this.f=f;}
-    public double y(){return r+n+f;} public double ren(){return y()==0?0:r/y()*100;}
-    public double elr(){return r==0?0:(f+n)/r;} public double eir(){return (r+n)==0?0:f/(r+n);}
-    public double eyr(){return f==0?0:y()/f;} public double esi(){return elr()==0?0:eyr()/elr();}
+import java.util.ArrayList;
+import java.util.List;
+
+public class Simulacao {
+    private double energiaUsada;
+    private double transformidade;
+    private double emergia;
+    private final String fonte;
+
+    private static final List<Simulacao> historico = new ArrayList<>();
+
+    public Simulacao(double energiaUsada, double transformidade, String fonte) {
+        this.energiaUsada = energiaUsada;
+        this.transformidade = transformidade;
+        this.fonte = fonte;
+        this.emergia = calcularEmergia();
+
+        historico.add(this);
+    }
+
+    public double calcularEmergia() {
+        return emergia = energiaUsada * transformidade;
+    }
+    public double getEnergia() {
+        return energiaUsada;
+    }
+
+    public double getTransformidade() {
+        return transformidade;
+    }
+
+    public double getEmergia() {
+        return emergia;
+    }
+
+    public String getFonte() {
+        return fonte;
+    }
+
+    public static List<Simulacao> getHistorico() {
+        return historico;
+    }
+
 }
